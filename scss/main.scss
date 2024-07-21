@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+$white: #ffffff;
+$black: #000000d2;
+$primary: #3b5d50;
+$secondary: #f9bf29;
+$dark: #2f2f2f;
+$light: #dce5e4;
+$lighter: #eff2f1;
+$body_color: #6a6a6a;
+$paragraph: rgba($color: #ffffff, $alpha: .5);
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$font-family: "Inter", sans-serif;
+
+
+body {
+	overflow-x: hidden;
+	position: relative;
+}
+
+.text-opacity-half{
+    color: $paragraph;
+}
+
+/* Navbar */
+.navbar-toggler{
+    border-color: transparent !important;
+}
+.navbar-toggler:focus{
+    border:none !important;
+    box-shadow: none !important;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+.custom-navbar{
+    background-color: $primary !important;
+}
+.navbar-nav{
+    align-items: left !important;
+    justify-content: start !important;
+}
+.text-nav {
+    color: rgba($color: #ffffff, $alpha: .5) !important;
+}
+.text-nav:hover {
+    color: $white !important
+}
+
+.text-nav:active{
+    color: $white !important;
+}
+.nav-link {
+    position: relative;
+    color: #d6e2d6 !important;
+   
+    text-decoration: none;
+    display: inline-block; /* Ensure the link width is only as wide as the text */
+}
+.nav-link.active {
+    color: #ffffff !important;
+}
+.nav-item:hover {
+    cursor: pointer;
+}
+
+
+/* Hero */
+.hero {
+    background-color: $primary;
+    height: 100%;
+}
+.hero-h1{
+    font-size: 50px;
+}
+.btn {
+    border-radius: 30px !important;
+}
+.btn-secondary {
+    border-color: $secondary;
+}
+.btn-primary {
+    border: 2px solid  $paragraph !important;
+}
+.btn-black{
+    background-color: $black !important;
+    color: white !important;
+
+}
+.btn-black:hover{
+    background-color: rgba(0, 0, 0, 0.96) !important;
+    color: white !important;
+}
+.btn-primary:hover {
+    border: 2px solid  $white !important;
+    background-color: transparent;
+}
+
+/* Products */
+.product-item{
+    text-decoration: none !important;
+}
+/* Media query to apply styles only when width is greater than 991px */
+@media (min-width: 992px) {
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #ffc400;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-out;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        transform: scaleX(1);
+    }
+}
+
+@media (max-width:991px) {
+    .navbar-nav{
+        align-items: left !important;
+        justify-content: start !important;
+    }
+    .custom-nav-items{
+        padding-top: 20px !important;
+     }
+}
+
+
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
