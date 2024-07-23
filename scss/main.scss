@@ -219,8 +219,8 @@ body {
 .why-before:before{
     position: absolute;
     content: "";
-    width: 20vh;
-    height: 20vh;
+    width: 13vh;
+    height: 13vh;
     background-image: url("../images/dots-yellow.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -390,6 +390,9 @@ footer ::placeholder{
     #navbarNav{
         padding-top: 10px !important;
        }
+       .testimonial-text-smaller{
+        font-size: 10px;
+    }
 }
 @media (max-width:767px){
     .footer-border-top{
