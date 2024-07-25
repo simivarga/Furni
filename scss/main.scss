@@ -241,6 +241,7 @@ body {
     z-index: -1;
 }
 
+
 .imgs-grid{
     display: grid;
     grid-template-columns: repeat(27, 1fr);
@@ -393,6 +394,9 @@ footer ::placeholder{
        .testimonial-text-smaller{
         font-size: 10px;
     }
+    .about-carousel{
+    padding-bottom: 200px !important;
+    }
 }
 @media (max-width:767px){
     .footer-border-top{
@@ -400,14 +404,15 @@ footer ::placeholder{
         border-width: 2px !important;
     }
     .footer-img{
-        max-width: 300px !important;
+        max-width: 280px !important;
     }
+
 }
 
 @media (max-width:575px) {
     
     .footer-img{
-        top: -250px !important;
+        top: -230px !important;
     }
     .send-footer{
         text-align: center !important;
