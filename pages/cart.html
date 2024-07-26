@@ -29,7 +29,7 @@
                 <a class="nav-link  text-light" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link active text-nav" href="pages/shop.html">Shop</a>
+                <a class="nav-link text-nav" href="../pages/shop.html">Shop</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-nav" href="../pages/about.html">About Us</a>
@@ -44,7 +44,7 @@
                 <a class="nav-link text-nav pe-3" href="/pages/contact.html">Contact Us</a>
               </li>
               <li class="nav-item pt-1">
-                <a href="../pages/cart.html"><img src="../images/cart.svg" alt="" class="pe-3"></a>
+               <a href="../pages/cart.html"><img src="../images/cart.svg" alt="" class="pe-3"></a>
                <img src="../images/user.svg" alt="">
               </li>
     
@@ -56,7 +56,7 @@
         <div class="container pt-5 px-3">
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-5">
-                    <h1 class="text-white fw-bold  mb-4 ps-3" style="font-size: 50px;">Shop</h1>
+                    <h1 class="text-white fw-bold  mb-4 ps-3" style="font-size: 50px;">Cart</h1>
                   </div>
                 <div class="col-lg-7">
 
@@ -64,111 +64,135 @@
             </div>
         </div>
       </section>
-      <section class="product-section my-5 py-5">
-        <div class="container px-4 py-3">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-12 col-md-3 col-lg-3 mb-5 mb-md-0">
-                <a class="product-item" href="cart.html">
-                    <img src="../images/product-3.png" class="img-fluid product-thumbnail pb-3">
-                    <div class="product-details">
-                        <h3 class="product-title text-center text-black">Ergonomic Chair</h3>
-                        <p class="product-price fs-5 text-center fw-bold text-black">$43.00</p>
+    <section style="margin-bottom: 150px;" class="px-4">
+        <div class="container">
+              <div class="row mb-5">
+                <form class="col-md-12" method="post">
+                  <div class="site-blocks-table">
+                    <table class="tablecart">
+                      <thead>
+                        <tr style="border-bottom: 2px solid #3b5d50 ;">
+                          <th class="product-thumbnail">Image</th>
+                          <th class="product-name">Product</th>
+                          <th class="product-price">Price</th>
+                          <th class="product-quantity">Quantity</th>
+                          <th class="product-total">Total</th>
+                          <th class="product-remove">Remove</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="product-thumbnail">
+                            <img src="../images/product-1.png" alt="Image" class="img-fluid" style="max-width: 160px;">
+                          </td>
+                          <td class="product-name">
+                            <h2 class="h5 text-black">Product 1</h2>
+                          </td>
+                          <td>$49.00</td>
+                          <td>
+                            <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
+                              <div class="input-group-prepend">
+                                <button class="btn btn-outline-black decrease" type="button">&minus;</button>
+                              </div>
+                              <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-black increase" type="button">&plus;</button>
+                              </div>
+                            </div>
+        
+                          </td>
+                          <td>$49.00</td>
+                          <td><a href="#" class="btn btn-secondary btn-sm">X</a></td>
+                        </tr>
+        
+                        <tr>
+                          <td class="product-thumbnail">
+                            <img src="../images/product-2.png" alt="Image" class="img-fluid" style="max-width: 120px;">
+                          </td>
+                          <td class="product-name">
+                            <h2 class="h5 text-black">Product 2</h2>
+                          </td>
+                          <td>$49.00</td>
+                          <td>
+                            <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
+                              <div class="input-group-prepend">
+                                <button class="btn btn-outline-black decrease" type="button">&minus;</button>
+                              </div>
+                              <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-black increase" type="button">&plus;</button>
+                              </div>
+                            </div>
+        
+                          </td>
+                          <td>$49.00</td>
+                          <td><a href="#" class="btn btn-secondary btn-sm">X</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </form>
+              </div>
+        
+              <div class="row mt-4 ">
+                <div class="col-md-6">
+                  <div class="row mb-5">
+                    <div class="col-sm-6 mb-3">
+                      <button class="btn btn-black px-4 py-2 fw-medium">Update Cart</button>
                     </div>
-                    <span class="icon-cross">
-                        <img src="../images/cross.svg" class="img-fluid">
-                    </span>
-                </a>
-            </div>
-                <div class="col-12 col-md-3 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="../images/product-1.png" class="img-fluid product-thumbnail pb-3">
-                        <div class="product-details">
-                            <h3 class="product-title text-center text-black">Nordic Chair</h3>
-                            <p class="product-price fs-5 text-center fw-bold text-black">$50.00</p>
-                        </div>
-                        <span class="icon-cross">
-                            <img src="../images/cross.svg" class="img-fluid">
-                        </span>
-                    </a>
+                    <div class="col-sm-6">
+                      <button class="btn btn-black px-4 py-2 fs-6 fw-medium">Continue Shopping</button>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="col-md-12">
+                      <label class="text-black h4" for="coupon">Coupon</label>
+                      <p>Enter your coupon code if you have one.</p>
+                    </div>
+                    <div class="col-md-8 mb-3">
+                      <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
+                    </div>
+                    <div class="col-lg-4 ">
+                      <button class="btn btn-black px-4 py-2 fs-6 fw-medium">Apply Coupon</button>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-12 col-md-3 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="../images/product-2.png" class="img-fluid product-thumbnail pb-3">
-                        <div class="product-details">
-                            <h3 class="product-title text-center text-black">Kruzo Aero Chair</h3>
-                            <p class="product-price fs-5 text-center fw-bold text-black">$78.00</p>
+                <div class="col-md-6 pl-5">
+                  <div class="row justify-content-end">
+                    <div class="col-md-7 mt-4">
+                      <div class="row">
+                        <div class="col-md-12 text-right border-bottom mb-5">
+                          <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
                         </div>
-                        <span class="icon-cross">
-                            <img src="../images/cross.svg" class="img-fluid">
-                        </span>
-                    </a>
-                </div>
-                
-                <div class="col-12 col-md-3 col-lg-3 mb-5 mb-md-0">
-                  <a class="product-item" href="cart.html">
-                      <img src="../images/product-3.png" class="img-fluid product-thumbnail pb-3">
-                      <div class="product-details">
-                          <h3 class="product-title text-center text-black">Ergonomic Chair</h3>
-                          <p class="product-price fs-5 text-center fw-bold text-black">$43.00</p>
                       </div>
-                      <span class="icon-cross">
-                          <img src="../images/cross.svg" class="img-fluid">
-                      </span>
-                  </a>
+                      <div class="row mb-3">
+                        <div class="col-md-6">
+                          <span class="text-black">Subtotal</span>
+                        </div>
+                        <div class="col-md-6 text-right">
+                          <strong class="text-black">$230.00</strong>
+                        </div>
+                      </div>
+                      <div class="row mb-5">
+                        <div class="col-md-6">
+                          <span class="text-black">Total</span>
+                        </div>
+                        <div class="col-md-6 text-right">
+                          <strong class="text-black">$230.00</strong>
+                        </div>
+                      </div>
+        
+                      <div class="row">
+                        <div class="col-md-12">
+                          <button class="btn btn-black btn-md py-3 px-5 fw-medium">Proceed To Checkout</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="row justify-content-center align-items-center mt-5">
-              <div class="col-12 col-md-3 col-lg-3 mb-5 mb-md-0">
-                <a class="product-item" href="cart.html">
-                    <img src="../images/product-3.png" class="img-fluid product-thumbnail pb-3">
-                    <div class="product-details">
-                        <h3 class="product-title text-center text-black">Ergonomic Chair</h3>
-                        <p class="product-price fs-5 text-center fw-bold text-black">$43.00</p>
-                    </div>
-                    <span class="icon-cross">
-                        <img src="../images/cross.svg" class="img-fluid">
-                    </span>
-                </a>
-            </div>
-                <div class="col-12 col-md-3 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="../images/product-1.png" class="img-fluid product-thumbnail pb-3">
-                        <div class="product-details">
-                            <h3 class="product-title text-center text-black">Nordic Chair</h3>
-                            <p class="product-price fs-5 text-center fw-bold text-black">$50.00</p>
-                        </div>
-                        <span class="icon-cross">
-                            <img src="../images/cross.svg" class="img-fluid">
-                        </span>
-                    </a>
-                </div>
-                <div class="col-12 col-md-3 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="../images/product-2.png" class="img-fluid product-thumbnail pb-3">
-                        <div class="product-details">
-                            <h3 class="product-title text-center text-black">Kruzo Aero Chair</h3>
-                            <p class="product-price fs-5 text-center fw-bold text-black">$78.00</p>
-                        </div>
-                        <span class="icon-cross">
-                            <img src="../images/cross.svg" class="img-fluid">
-                        </span>
-                    </a>
-                </div>
-                
-                <div class="col-12 col-md-3 col-lg-3 mb-5 mb-md-0">
-                  <a class="product-item" href="cart.html">
-                      <img src="../images/product-3.png" class="img-fluid product-thumbnail pb-3">
-                      <div class="product-details">
-                          <h3 class="product-title text-center text-black">Ergonomic Chair</h3>
-                          <p class="product-price fs-5 text-center fw-bold text-black">$43.00</p>
-                      </div>
-                      <span class="icon-cross">
-                          <img src="../images/cross.svg" class="img-fluid">
-                      </span>
-                  </a>
-              </div>
-            </div>
-        </div>
+        
     </section>
     <footer class="bg-white py-5 mt-5">
       <div class="container py-3 position-relative" style="top: 50px;">
