@@ -519,7 +519,7 @@ textarea {
         transform-origin: left;
         transition: transform 0.3s ease-out;
     }
-
+   
     .nav-link:hover::after,
     .nav-link.active::after {
         transform: scaleX(1);
@@ -541,6 +541,9 @@ textarea {
        .testimonial-text-smaller{
         font-size: 10px;
     }
+    .hero-h1{
+        font-size: 40px;
+    }
     .about-carousel{
     padding-bottom: 200px !important;
     }
@@ -553,7 +556,9 @@ textarea {
     .footer-img{
         max-width: 280px !important;
     }
-
+    .hero-h1{
+        font-size: 30px;
+    }
 }
 
 @media (max-width:575px) {
