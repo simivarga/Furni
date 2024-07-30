@@ -475,6 +475,15 @@ textarea {
   color: rgba(0, 0, 0, 0.8235294118);
 }
 
+.send-footer {
+  display: flex;
+  align-items: center !important;
+}
+
+.border-r-50 {
+  border-radius: 50% !important;
+}
+
 .couponcode-wrap input {
   border-radius: 10px !important;
 }
@@ -546,7 +555,7 @@ textarea {
     top: -230px !important;
   }
   .send-footer {
-    text-align: center !important;
+    justify-content: center;
   }
 }
 /*!

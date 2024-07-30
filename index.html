@@ -9,10 +9,6 @@
 	<link href="scss/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="js/script.js"></script>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Furni</title>
 </head>
 <body>
@@ -230,7 +226,7 @@
      </section>
 
 
-     <section class="mt-5">
+     <section class="mt-5" style="margin-bottom: 200px;">
       <h1 class="text-center text-black fw-medium mb-3 mt-5">Testimonials</h1>
       <div class="container">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -249,9 +245,9 @@
                   habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis 
                   volutpat dui quis scelerisque.”
                 </p>
-                <img src="images/person-1.jpg" class="img-fluid mb-3"style="border-radius: 50%; width: 10vh"  alt="">
-                <h5>Maria Jones</h5>
-                <p>CEO, Co-Founder, XYZ Inc.</p>
+                <img src="images/person_2.jpg" class="img-fluid mb-3"style="border-radius: 50%; width: 10vh"  alt="">
+                <h5>Jack Daniels</h5>
+                <p>Aasd, Co-Founder, XYZ Inc.</p>
               </div>
             </div>
           </div>
@@ -264,9 +260,9 @@
                   habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis 
                   volutpat dui quis scelerisque.”
                 </p>
-                <img src="images/person-1.jpg" class="img-fluid mb-3"style="border-radius: 50%; width: 10vh"  alt="">
-                <h5>Maria Jones</h5>
-                <p>CEO, Co-Founder, XYZ Inc.</p>
+                <img src="images/person_3.jpg" class="img-fluid mb-3"style="border-radius: 50%; width: 10vh"  alt="">
+                <h5>John</h5>
+                <p>CEO, XYZ Inc.</p>
               </div>
             </div>
           </div>
@@ -336,7 +332,7 @@
                   <input type="email" class="form-control py-2" placeholder="Enter Your Email">
                 </div>
                  <div class="col-sm-4 send-footer">
-                  <button class="btn btn-primary " aria-label="send"><i class="bi bi-send"></i></button>
+                  <button class="btn btn-primary border-r-50" aria-label="send"><i class="bi bi-send"></i></button>
                  </div>
               </div>
             </div>
@@ -387,7 +383,7 @@
           </div>
           <div class="row px-3 pt-4 mt-4" style="border-top: 2px solid #3b5d505a;">
              <div class="col-lg-6 text-center text-lg-start">
-              <p class="fs-5">&copy; 2021 Furni. All rights reserved.</p>
+              <p class="fs-5">&copy; 2024 Furni. All rights reserved.</p>
              </div>
            <div class="col-lg-6 text-center text-lg-end">
             <a href="" aria-label="Furni" class="text-center">Terms & Conditions</a>
@@ -396,44 +392,53 @@
               
         </div>
       </footer>
-      <script>
-       document.addEventListener("DOMContentLoaded", function() {
-    // Function to handle cross icon clicks
-    function handleCrossClick(event) {
-        event.preventDefault();
-        
-        // Get the closest product-item element
-        const productElement = event.currentTarget.closest('.product-item');
-        const productId = productElement.getAttribute('data-product-id');
-        const productName = productElement.getAttribute('data-product-name');
-        const productPrice = productElement.getAttribute('data-product-price');
-
-        // Get the current cart from localStorage
-        let cart = JSON.parse(localStorage.getItem('cart')) || {};
-
-        // Add or update the product in the cart
-        if (!cart[productId]) {
-            cart[productId] = { name: productName, price: parseFloat(productPrice), quantity: 0 };
-        }
-        cart[productId].quantity += 1;
-
-        // Save the updated cart to localStorage
-        localStorage.setItem('cart', JSON.stringify(cart));
-
-        // Redirect to cart page
-        window.location.href = '/other-pages/cart.html';
-    }
-
-    // Attach click event listeners to all cross icons
-    const crossIcons = document.querySelectorAll('.icon-cross');
-    crossIcons.forEach(icon => {
-        icon.addEventListener('click', handleCrossClick);
-    });
-});
-    </script>
+      
       <a href="#" class="to-top text-center" aria-label="to-top"><i class="bi bi-chevron-up"></i> </a>
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+     // Function to handle cross icon clicks
+     function handleCrossClick(event) {
+         event.preventDefault();
+         
+         // Get the closest product-item element
+         const productElement = event.currentTarget.closest('.product-item');
+         const productId = productElement.getAttribute('data-product-id');
+         const productName = productElement.getAttribute('data-product-name');
+         const productPrice = productElement.getAttribute('data-product-price');
+ 
+         // Get the current cart from localStorage
+         let cart = JSON.parse(localStorage.getItem('cart')) || {};
+ 
+         // Add or update the product in the cart
+         if (!cart[productId]) {
+             cart[productId] = { name: productName, price: parseFloat(productPrice), quantity: 0 };
+         }
+         cart[productId].quantity += 1;
+ 
+         // Save the updated cart to localStorage
+         localStorage.setItem('cart', JSON.stringify(cart));
+ 
+         // Redirect to cart page
+         window.location.href = '/other-pages/cart.html';
+     }
+ 
+     // Attach click event listeners to all cross icons
+     const crossIcons = document.querySelectorAll('.icon-cross');
+     crossIcons.forEach(icon => {
+         icon.addEventListener('click', handleCrossClick);
+     });
+ });
+     </script>
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
 </body>
 </html>
